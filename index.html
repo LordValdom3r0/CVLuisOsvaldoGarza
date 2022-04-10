@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Osvaldo Garza Robledo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid templateTwoColumns secciones" id="CV">
+    <aside class="puesto">
+        <div class="nombreCompleto">
+            <img class="perfil" src="img/CV.jpeg" alt="">
+            <p class="nombre">Luis Osvaldo</p>
+            <p class="apellido">Garza Robledo</p>
+        </div>
+        <div class="especificaciones">
+            
+            <h1 class="titulo">
+                Contacto
+            </h1>
+            <p class="divline"> </p>
+        <div class="contacto">
+            <span class="dataContact"><h3>Tel.</h3> 8781165580</span>
+            <span class="dataContact"><h3>GitHub:</h3>Vald0</span>
+            <span class="dataContact"><h3>Facebook:</h3>Osvaldo Garza</span>
+            <span class="dataContact"><h3>Instagram:</h3>garza.valdo</span>
+            <span class="dataContact">luisosvaldogarza@gmail.com</span>
+        </div>
+        <div>
+        </div>
+    </aside>   
+    <section class="experiencia">
+        <div class="laboral">
+            <h2 class="titulo">Educación</h2>
+        <p class="divline"> </p>
+        <nav class="texto">
+            <h3>Centro de Bachillerato Tecnológico Industrial y de Servicios</h3>
+            <h4>Tecnico en Programación</h4>
+            <p>Junio 2016 - Julio 2018</p>
+        </nav>
+        <p class="tinyline"> </p>
+        <nav class="texto">
+            <h3>Universidad Tecnológica del Norte de Coahuila</h3>
+            <h4>Tecnico Superior de Mecatrónica en Area de Instalaciones Eléctricas Eficientes</h4>
+            <p>Septiembre 2016 - Agosto 2018</p>
+        </nav>
+        <p class="tinyline"> </p>
+        <nav class="texto">
+            <h3>Universidad Tecnológica del Norte de Coahuila</h3>
+            <h4>Ingeniería en Mecatrónica</h4>
+            <p>Septiembre 2018 - Abril 2020</p>
+        </nav>
+        </div>
+        <div class="laboral">
+            <h2 class="titulo">Experiencia Laboral</h2>
+            <p class="divline"> </p>
+            <h3 class="subtitulo">Fujikura - Practicante Becario en Soporte Tecnico</h3>
+            <p>Desarrollo y mantenimiento de desarrollo de software Front-end para áreas de estaciones de inserciones de fusibles, y visión de torque y ángulo, (EVTA, EIAF, Conveyor, PUR) dando resultados de manera visual y dinámica la cantidad de fusibles insertados con especificadas sus propiedades;
+             Incluyendo también la recepción de datos de los pedidos de cada área desde el sitio web, donde es posible descargarlos en formato de Excel.</p>
+        </div>
+        <div class="laboral">
+            <h2 class="titulo">Aptitudes</h2>
+        <p class="divline"> </p>
+        <ul>
+            <li>Autodidacta y Curioso</li>
+            <li>Concentrado ante metas y objetivos</li>
+            <li>Experiencia en trabajo en equipo</li>
+            <li>Experiencia en trabajo con API's(python-flask) y Bases de datos(phpMyAdmin)</li>
+            <li>Conocimiento multiples herramientas para el desarrollo de sitios web<br> (gulp, responsive, visual studio code, etc.)</li>
+            <li>Experiencia en lenguajes como JS(Jquery,SheetJS,Momentjs), CSS(grid, flex y responsive) y HTML</li>
+            <li>Conocimiento en lenguajes como SASS, PHP, Ruby(Jekyll), PYTHON y Arduino</li>
+            <li>Nivel de Ingles: B1</li>
+        </ul>
+        </div>
+        <div class="laboral">
+            <h2 class="titulo">Resumen Profesional</h2>
+        <p class="divline"> </p>
+        <p>Egresado de la Ingeniería de la UTNC, elabora y desarrolla con una creatividad dominante en cuanto Front-end se trate;
+            enfocado a sus metas y misiones con la intención de servir a sus compañeros con absoluta prioridad, flexible ante opiniones e ideas
+            para realizar el trabajo asignado. Capaz de aprender a voluntad múltiples herramientas con el objetivo de optimizar la tarea especificada.
+            Experiencia en Javascript, utilizando distintas librerías que dan funciones únicas como canvas, Jquery,  sheetJS y MomentJS, incluyendo también la manipulación de datos en formato JSON, también en experiencia en acomodo de datos en HTML utilizando las herramientas de CSS como Display: Grid y Display: Flex. Conocimiento en lenguajes como Arduino, PHP, Python, Gulp.js, y Scss(Sass).
+        </p>
+        </div>
+    </section>
+
+</div>
+
+<div>
+    <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+</div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/html2canvas.js"></script>
+<script type="text/javascript">
+ function screenshot(){
+     html2canvas(document.getElementById('CV')).then(function(canvas) {
+         var link = document.createElement("a");
+         document.getElementById('CV').appendChild(link);
+            link.download = "html_image.png";
+            link.href = canvas.toDataURL("image/png");
+            link.target = '_blank';
+            link.click(); //Enrique valadez 8781165580
+   });
+  }
+</script>
+
+</html>
