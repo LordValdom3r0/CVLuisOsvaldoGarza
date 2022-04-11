@@ -49,39 +49,56 @@
         <p class="tinyline"> </p>
         <nav class="texto">
             <h3>Universidad Tecnológica del Norte de Coahuila</h3>
-            <h4>Tecnico Superior de Mecatrónica en Area de Instalaciones Eléctricas Eficientes</h4>
-            <p>Septiembre 2016 - Agosto 2018</p>
-        </nav>
-        <p class="tinyline"> </p>
-        <nav class="texto">
-            <h3>Universidad Tecnológica del Norte de Coahuila</h3>
             <h4>Ingeniería en Mecatrónica</h4>
             <p>Septiembre 2018 - Abril 2020</p>
         </nav>
         </div>
         <div class="laboral">
-            <h2 class="titulo">Experiencia Laboral</h2>
+            <h2 class="titulo">Experiencia Profesional Destacable</h2>
             <p class="divline"> </p>
             <h3 class="subtitulo">Fujikura - Practicante Becario en Soporte Tecnico</h3>
-            <p>Desarrollo y mantenimiento de desarrollo de software Front-end para áreas de estaciones de inserciones de fusibles, y visión de torque y ángulo, (EVTA, EIAF, Conveyor, PUR) dando resultados de manera visual y dinámica la cantidad de fusibles insertados con especificadas sus propiedades;
-             Incluyendo también la recepción de datos de los pedidos de cada área desde el sitio web, donde es posible descargarlos en formato de Excel.</p>
+            <div class="texto">
+                <b class="fecha">2021, Visualización e inserción de fusibles dinámicos manipulados desde Front-end. (EIAF)</b>                
+                Codificación de visuales para líneas de producción con arquitectura IOT usando protocolos MQTT para la comunicación de dispositivos. <br> <img class="fusible" src="img/fusible.png" alt="descripcion grafica de insercion de fusible" srcset=""> <br> Mi participación fue ubicar las posibles selecciones del usuario para la inserción de fusibles, tomando en cuenta las dimensiones, amperaje, orientación (Horizontal o Vertical), categoría (MINI, ATO, MAXI, MULTI y Relays) y color utilizando un formato Object (JSON) para declarar las coordenadas de las cavidades posibles de seleccionar. 
+            </div>
+        <p class="tinyline"> </p>
+            <div class="texto">
+                <b class="fecha">2021-2022, Administración de Resultados de Producción para Estación de Visión, Torque y Angulo (EVTA)</b>
+                Desarrollo administrativo de resultados generados por las líneas de producción con tecnología IOT e interfaces para la comunicación de datos usando datos SQL con la interfaz MQTT. Mi participación fue la realización de un formato en Excel; desde el código Front-End se tuvo que realizar una máquina de estados para enviar individualmente objetos con estructura JSON que los coloca en la hoja correspondiente al área (Torque, Visión, Altura, etc.) con respecto a las coordenadas de Excel sin que se sobreponga la información de las cajas correspondientes.(Esta tarea fue realizada gracias a la librería Sheet.js)<br>
+                <b class="fecha">Fig.A)</b>
+                <img class="diagrama" src="img/diagrama.png" alt="diagrama" srcset="">
+            </div>
         </div>
-        <div class="laboral">
-            <h2 class="titulo">Aptitudes</h2>
-        <p class="divline"> </p>
+
+    <div class="listas">
+        <div class="laboral ">
+            <h2 class="subtitulo">Aptitudes</h2>
         <ul>
-            <li>Autodidacta y Curioso</li>
-            <li>Concentrado ante metas y objetivos</li>
-            <li>Experiencia en trabajo en equipo</li>
+            <li>Autodidacta</li>
+            <li>Respetuoso</li>
+            <li>Creativo</li>
+            <li>Paciente</li>
+            <li>Empático</li>
+            <li>Trabajo en equipo</li>
+        </ul>
+    </div>
+    <div class="laboral item">
+        <h2 class="subtitulo">Conocimientos Tecnicos</h2>
+        <ul>
             <li>Experiencia en trabajo con API's(python-flask) y Bases de datos(phpMyAdmin)</li>
-            <li>Conocimiento multiples herramientas para el desarrollo de sitios web<br> (gulp, responsive, visual studio code, etc.)</li>
+            <li>Conocimiento múltiples herramientas para el desarrollo de sitios web<br> (gulp, responsive, visual studio code, etc.)</li>
             <li>Experiencia en lenguajes como JS(Jquery,SheetJS,Momentjs), CSS(grid, flex y responsive) y HTML</li>
             <li>Conocimiento en lenguajes como SASS, PHP, Ruby(Jekyll), PYTHON y Arduino</li>
-            <li>Nivel de Ingles: B1</li>
         </ul>
         </div>
+
+    <div class="laboral">
+            <h2 class="subtitulo">Nivel de Inglés</h2>
+            <p class="nivel">B1</p>
+            </div>
+    </div>
         <div class="laboral">
-            <h2 class="titulo">Resumen Profesional</h2>
+            <h2 class="subtitulo">Resumen Profesional</h2>
         <p class="divline"> </p>
         <p>Egresado de la Ingeniería de la UTNC, elabora y desarrolla con una creatividad dominante en cuanto Front-end se trate;
             enfocado a sus metas y misiones con la intención de servir a sus compañeros con absoluta prioridad, flexible ante opiniones e ideas
@@ -93,8 +110,8 @@
 
 </div>
 
-<div>
-    <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+<div class="flex justify-content">
+    <input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
 </div>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
@@ -104,10 +121,10 @@
      html2canvas(document.getElementById('CV')).then(function(canvas) {
          var link = document.createElement("a");
          document.getElementById('CV').appendChild(link);
-            link.download = "html_image.png";
+            link.download = "LuisOsvaldoGarzaCV.png";
             link.href = canvas.toDataURL("image/png");
             link.target = '_blank';
-            link.click(); //Enrique valadez 8781165580
+            link.click();
    });
   }
 </script>

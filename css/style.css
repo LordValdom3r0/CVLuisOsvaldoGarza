@@ -22,13 +22,19 @@ span{
 .grid{
     display: grid;
 }
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
 .secciones{
-    margin: 8rem  auto 8rem auto;
+    margin: 8rem  auto 1rem auto;
     width: 21.59cm;
     height: 27.94cm;
 }
 .templateTwoColumns{
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1fr 0fr;
 }
 .puesto {
@@ -41,7 +47,9 @@ span{
 }
 .perfil{
     width: 20rem;
-    margin: 2rem 1rem;
+    margin: 2rem 5rem;
+    border-radius: 50%;
+    border: solid darkgray;
 }
 .nombre{
     font-family: var(--merryweather);
@@ -117,17 +125,30 @@ font-family: var(--arial);
     margin: 0;
     height: 2px;
 }
-
+.listas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.listas>.laboral>.subtitulo{
+    color: var(--verde);
+}
+.item{
+    grid-area: span 3 / 1 / 1;
+}
 .tinyline{
     background-color: var(--verde);
     width: 82%;
-    margin: 0 1rem;
+    margin: 0 7rem;
     height: 1px;
 }
+.nivel{
+    font-size: larger;
+    font-style: italic;
+}
 .texto{
+    text-align: right;
     font-family: var(--merryweather);
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin: 0.5rem 0 0.5rem 0;
 }
 .texto>h3{
     font-size: 1.2rem;
@@ -137,4 +158,34 @@ font-family: var(--arial);
 .texto>h4{
     font-size: 1rem;
     font-style: italic;
+}
+.fecha{
+    font-family: arial;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.fusible{
+    width: 15rem;
+}
+.diagrama{
+    position: absolute;
+    left: 27rem;
+    width: 23rem;
+    top: 79rem;
+    border-radius: 6%;
+}
+.button{
+    cursor: pointer;
+    background-color: var(--azul);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--merryweather);
+    padding: 1rem;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease-out;
+}
+.button:hover{
+    background-color: rgb(158, 214, 216);
+    border: solid rgb(53, 53, 53)
 }
