@@ -169,11 +169,14 @@ font-family: var(--arial);
     width: 15rem;
 }
 .diagrama{
-    position: absolute;
-    left: 27rem;
     width: 23rem;
-    top: 79rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
     border-radius: 6%;
+}
+.qr{
+    width: 6rem;
+    margin-left: 1.2rem;
 }
 .button{
     cursor: pointer;
