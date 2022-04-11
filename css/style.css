@@ -75,13 +75,13 @@ span{
 .titulo{
     font-family: var(--merryweather);
     font-size: 1.8rem;
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     color: var(--azul);
 }
 .subtitulo{
     font-family: var(--merryweather);
     font-style: italic;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 .dataContact{
     font-family: var(--merryweather);
@@ -105,7 +105,7 @@ span{
     flex-direction: column;
 }
 .laboral{
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     margin-left: 2rem;
     width: 80%;
     min-height: min-content;
@@ -138,7 +138,7 @@ font-family: var(--arial);
 .tinyline{
     background-color: var(--verde);
     width: 82%;
-    margin: 0 7rem;
+    margin: 0;
     height: 1px;
 }
 .nivel{
@@ -146,7 +146,7 @@ font-family: var(--arial);
     font-style: italic;
 }
 .texto{
-    text-align: right;
+    text-align: left;
     font-family: var(--merryweather);
     margin: 0.5rem 0 0.5rem 0;
 }
@@ -154,10 +154,12 @@ font-family: var(--arial);
     font-size: 1.2rem;
     font-weight: 300;
     font-style: italic;
+    margin: 0.5rem 0;
 }
 .texto>h4{
     font-size: 1rem;
     font-style: italic;
+    margin: 0.5rem 0;
 }
 .fecha{
     font-family: arial;
@@ -167,6 +169,10 @@ font-family: var(--arial);
 }
 .fusible{
     width: 15rem;
+}
+.rango{
+    width: 12rem;
+    margin: -6px 12rem;
 }
 .diagrama{
     width: 23rem;
